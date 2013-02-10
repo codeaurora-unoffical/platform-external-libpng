@@ -3,7 +3,7 @@
  *
  * Last changed in libpng 1.2.45 [July 7, 2011]
  * Copyright (c) 1998-2011 Glenn Randers-Pehrson
- * Copyright (c) 2010-2011, Code Aurora Forum. All rights reserved.
+ * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
  * (Version 0.96 Copyright (c) 1996, 1997 Andreas Dilger)
  * (Version 0.88 Copyright (c) 1995, 1996 Guy Eric Schalnat, Group 42, Inc.)
  *
