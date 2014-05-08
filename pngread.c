@@ -1004,6 +1004,7 @@ png_build_index(png_structp png_ptr)
 
    png_indexp index = png_malloc(png_ptr, sizeof(png_index));
    png_ptr->index = index;
+   memset(png_ptr->index, 0, sizeof(png_index));
 
    index->stream_idat_position = png_ptr->total_data_read - IDAT_HEADER_SIZE;
 
@@ -1022,6 +1023,7 @@ png_build_index(png_structp png_ptr)
          (png_ptr->height + index->step[p] - 1) / index->step[p];
       index->pass_line_index[p] =
          png_malloc(png_ptr, index->size[p] * sizeof(png_line_indexp));
+         memset(index->pass_line_index[p], 0, index->size[p] * sizeof(png_line_indexp));
 
       // Get the row_byte_length seen by the filter. This value may be
       // different from the row_byte_length of a bitmap in the case of
